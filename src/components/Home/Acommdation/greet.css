@@ -1,0 +1,122 @@
+#greet {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff4e6;
+    position: relative;
+    padding-top: 5rem;
+
+
+}
+
+#greet::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.244);
+    bottom: 0%;
+    left: 5%;
+}
+
+.image img {
+    width: 25%;
+    height: 500px;
+    float: right;
+    margin-right: 8rem;
+    object-fit: contain;
+}
+
+
+.explore {
+    width: 44%;
+    float: left;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 0.9rem;
+}
+
+.explore p {
+    padding-top: 0;
+    padding-bottom: 3rem;
+}
+
+.explore a {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    width: fit-content;
+}
+
+
+/*=================== Media QUERIESE(MEDIUM DEVICES) =========*/
+@media screen and (max-width:1024px) {
+    #greet {
+        width: 100%;
+        height: 70vh;
+        padding-top: 10rem;
+
+    }
+
+    .explore {
+        width: 54%;
+        float: left;
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 0.9rem;
+    }
+
+    .image img {
+        width: 25%;
+        height: 500px;
+        float: right;
+        margin-right: 3rem;
+        object-fit: contain;
+    }
+}
+
+/*=================== Media QUERIESE(SMALL DEVICES) =========*/
+@media screen and (max-width:600px) {
+    #greet {
+        width: 100%;
+        height: 122vh;
+        padding-top: 3rem;
+        position: relative;
+    }
+
+
+    .explore {
+        width: 100%;
+        font-size: 0.7rem;
+        margin: 0;
+        text-align: center;
+
+    }
+
+    .explore p {
+        font-size: .8rem;
+        padding: 2rem;
+        align-self: center;
+    }
+
+    .explore a {
+        display: none;
+    }
+
+    .image img {
+        width: 100%;
+        height: 200px;
+        margin-right: 0rem;
+        object-fit: contain;
+        border-radius: 2rem;
+    }
+
+    .image {
+        width: 90%;
+        margin: 0% auto;
+    }
+}

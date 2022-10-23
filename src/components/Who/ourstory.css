@@ -1,0 +1,105 @@
+#story {
+    background-color: #fff4e6;
+    width: 100%;
+    height: auto;
+    color: #000;
+
+}
+
+.storyCard {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5rem;
+    gap: 3rem;
+}
+
+.storyList {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 55%;
+    gap: 2rem;
+    height: 100%;
+
+}
+
+.storyList p {
+    font-size: 1rem;
+    text-align: end;
+    font-family: Tajawal;
+}
+
+.storyList h1,
+h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: Tajawal;
+}
+
+.storyImage {
+    width: 40%;
+    padding-top: 1rem;
+    margin-left: 5rem;
+}
+
+.storyImage img {
+    width: 70%;
+    height: 550px;
+    object-fit: contain;
+}
+
+/*=================== Media QUERIESE(MEDIUM DEVICES) =========*/
+@media screen and (max-width:1024px) {}
+
+/*=================== Media QUERIESE(SMALL DEVICES) =========*/
+@media screen and (max-width:600px) {
+    #story {
+        overflow-x: hidden;
+
+    }
+
+    .storyImage {
+
+        width: 40%;
+        padding-top: 0rem;
+        margin-left: 5rem;
+    }
+
+    .storyImage img {
+        width: 70%;
+        height: 150px;
+        object-fit: contain;
+    }
+
+    .storyCard {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+        padding: 1rem;
+
+    }
+
+    .storyList {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        gap: 2rem;
+        text-align: center;
+
+    }
+
+    .storyImage {
+        width: 90%;
+    }
+
+    .storyList p {
+
+        text-align: center;
+        line-height: 1.8rem;
+    }
+}

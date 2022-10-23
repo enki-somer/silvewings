@@ -1,0 +1,92 @@
+.serv {
+    background-color: #fff4e6;
+    width: fit-content;
+    height: auto;
+    position: relative;
+    padding-bottom: 4rem;
+
+
+}
+
+.serv .servTitle {
+    padding-top: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+.achev {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding-bottom: 6rem;
+    position: relative;
+}
+
+.achev::after {
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 1px;
+    background-color: black;
+    bottom: 0%;
+    left: 4%;
+}
+
+.achev img {
+    width: 35%;
+    object-fit: contain;
+    position: absolute;
+    right: 0%;
+    top: 25%;
+
+}
+
+.achev h2 {
+    width: 30%;
+    text-align: start;
+    line-height: 2.6rem;
+    font-size: 1rem;
+    padding: 2.3rem;
+    background: linear-gradient(45deg, #fff4e6, #0A9CD8);
+    border-radius: 0rem 7rem 2rem 0rem;
+
+
+}
+
+.arabic-ach {
+    width: 90%;
+    text-align: center;
+    height: auto;
+}
+
+
+
+/*=================== Media QUERIESE(SMALL DEVICES) =========*/
+@media screen and (max-width:600px) {
+
+
+    .serv .servTitle {
+        padding-top: 5rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 1rem;
+    }
+
+
+    .serv .card1 .lg {
+        width: 90%;
+    }
+
+}
+
+/*=================== Media QUERIESE(MEDIUM DEVICES) =========*/
+@media screen and (max-width:1024px) {}

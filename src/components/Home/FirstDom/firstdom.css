@@ -1,0 +1,102 @@
+nav {
+    background-color: rgba(0, 0, 0, 0.22);
+}
+
+.bgv {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.greet {
+    position: absolute;
+    z-index: 0;
+    right: 23%;
+    top: 47%;
+    color: #ffffff;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #1c4557cf;
+    border-radius: 10rem 2rem;
+    width: 60%;
+
+}
+
+.greet p {
+    color: silver;
+    letter-spacing: 0.7rem;
+
+}
+
+.scrol a {
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    font-size: 1.2rem;
+    bottom: 4%;
+    left: 50%;
+    text-align: center;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    transform: rotateY(0);
+    z-index: 0;
+
+}
+
+.scrol a:hover {
+    color: #fff;
+    transform: rotateY(-40deg);
+
+}
+
+/*=================== Media QUERIESE(SMALL DEVICES) =========*/
+@media screen and (max-width:600px) {
+
+    .all {
+        width: 100%;
+        background-image: url(../../assets/about.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        height: 100vh;
+        animation: none;
+    }
+
+    .bgv {
+        display: none;
+    }
+
+    .greet {
+        font-size: 1.5rem;
+        right: 17%;
+        top: 50%;
+    }
+
+    .scrol {
+        display: none;
+    }
+}
+
+/*=================== Media QUERIESE(SMALL DEVICES) =========*/
+@media screen and (max-width:1024px) {
+    .all {
+        height: 100vh;
+        width: 100%;
+        background-image: url(../../assets/about.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .bgv {
+        display: none;
+    }
+
+    .greet {
+        font-size: 1.5rem;
+        right: 17%;
+        top: 37%;
+    }
+}

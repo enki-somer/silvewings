@@ -1,0 +1,104 @@
+.acommdation {
+    width: 100%;
+    height: 750vh;
+    padding-bottom: 6rem;
+    padding-top: 1rem;
+    background-color: #fff4e6a3;
+}
+
+
+.title {
+    text-align: center;
+    margin: 3rem;
+}
+
+.art {
+    width: 80%;
+    height: 250px;
+    border-radius: 10rem;
+    position: relative;
+    float: right;
+    margin: 2rem 0rem;
+    background-color: #7dd6fc;
+
+}
+
+.year {
+    border-radius: 0rem 20rem 20rem 0rem;
+    position: relative;
+    float: left;
+    width: 30%;
+    background-color: #129CD8;
+    text-align: center;
+    z-index: 1;
+
+}
+
+
+
+.logo {
+    width: 14%;
+    position: absolute;
+    right: 6%;
+    top: -25%;
+}
+
+.content-log .eng {
+    position: absolute;
+    left: 10%;
+    top: 4%;
+    width: 40%;
+}
+
+.content-log .arb {
+    position: absolute;
+    text-align: end;
+    right: 8%;
+    top: 40%;
+    width: 40%;
+    font-family: Tajawal;
+}
+
+.content-log .arb h1 {
+    font-family: Tajawal;
+
+}
+
+/*=================== Media QUERIESE(SMALL DEVICES) =========*/
+@media screen and (max-width:600px) {
+    .acommdation {
+        height: 500vh;
+    }
+
+    .art {
+        text-align: center;
+        height: 150px;
+    }
+
+    .year {
+        width: 100%;
+    }
+
+    .logo {
+        width: 25%;
+        top: -15%;
+    }
+
+    .content-log .eng {
+        position: absolute;
+        left: 4%;
+        top: 10%;
+        width: 60%;
+        font-size: .6rem;
+    }
+
+    .content-log .arb {
+        position: absolute;
+        text-align: end;
+        right: 10%;
+        top: 60%;
+        width: 60%;
+        font-size: 0.45rem;
+
+    }
+}

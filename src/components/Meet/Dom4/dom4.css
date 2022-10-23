@@ -1,0 +1,63 @@
+.meet-dom {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff4e6;
+    background-image: url(../../assets/mis.jpg);
+    background-position: center;
+    background-size: 100%;
+    animation-name: zoom-in;
+    animation-duration: 6s;
+    transition: all .7s ease;
+    background-repeat: no-repeat;
+}
+
+@keyframes zoom-in {
+    0% {
+        background-size: 170%;
+    }
+
+    100% {
+        background-size: 100%;
+    }
+}
+
+.meet-dom .greet-mis {
+    position: absolute;
+    z-index: 0;
+    right: 20%;
+    top: 47%;
+    color: #ffffff;
+    font-size: 1.8rem;
+    display: flex;
+    gap: 1rem;
+    background-color: #1781ae92;
+    border-radius: 10rem 2rem;
+}
+
+/*=================== Media QUERIESE(SMALL DEVICES) =========*/
+@media screen and (max-width:600px) {
+    .meet-dom {
+        width: 100%;
+        height: 90vh;
+        background-color: #e9d5bb;
+        background-image: url(../../assets/mis.jpg);
+        background-position: center;
+        background-size: cover;
+        animation-name: none;
+
+    }
+}
+
+/*=================== Media QUERIESE(MEDIUM DEVICES) =========*/
+@media screen and (max-width:1024px) {
+    .meet-dom {
+        width: 100%;
+        height: 100vh;
+        background-color: #e9d5bb;
+        background-image: url(../../assets/mis.jpg);
+        background-position: center;
+        background-size: cover;
+        animation-name: none;
+
+    }
+}

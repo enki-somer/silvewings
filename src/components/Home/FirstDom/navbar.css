@@ -1,0 +1,93 @@
+.list {
+
+    position: absolute;
+    top: 10px;
+    font-size: 1.4rem;
+    width: 100%;
+    height: 100%;
+    color: white;
+    z-index: 2;
+
+}
+
+.list ul {
+    display: flex;
+    list-style: none;
+    padding: 1rem;
+    margin-left: 15.5rem;
+    border-radius: 06rem;
+    width: 64%;
+    background-color: #00000052;
+
+}
+
+
+li {
+    padding: 1rem;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    position: relative;
+    width: fit-content;
+
+
+}
+
+li::after {
+    content: "";
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+
+
+}
+
+.list ul li:hover::after {
+    opacity: 1;
+    width: 100%;
+}
+
+.logo_warb {
+    width: 7.7%;
+    position: absolute;
+    right: 10%;
+    top: -5%;
+
+}
+
+.but_warb img {
+    width: 100%;
+}
+
+
+
+
+/*=================== Media QUERIESE(MEDUIM DEVICES) =========*/
+@media screen and (max-width:1024px) {
+    .list {
+        font-size: 1.2rem;
+    }
+
+    .logo_warb {
+        top: -1%;
+        right: 4%;
+    }
+
+    .btt {
+        width: 150px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+/*=================== Media QUERIESE(SMALL DEVICES) =========*/
+@media screen and (max-width:600PX) {
+    .list {
+        display: none;
+    }
+}
